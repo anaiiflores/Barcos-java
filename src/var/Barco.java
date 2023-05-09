@@ -8,18 +8,11 @@ package var;
  *
  * @author 34633
  */
-public class Barco {
-
-    
-    //constructor:
-
-    public Barco() {
-    }
+public interface Barco{
 
     
     public void alarma();
-    
-    public void Socorro();
+    public void Socorro(String mensaje);
     
 
     
