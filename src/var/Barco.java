@@ -10,7 +10,8 @@ package var;
  */
 public interface Barco{
 
-    
+    //Se trata de una interfície. Por eso debemos crear unos metodos vacíos,
+    //los cuales mas adelante se llenan y se utilizan en otras clases.
     public void alarma();
     public void Socorro(String mensaje);
     

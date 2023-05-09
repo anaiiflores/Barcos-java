@@ -48,6 +48,8 @@ public class BarcoPesquero implements Barco {
     public void setNum_pescadores(int num_pescadores) {
         this.num_pescadores = num_pescadores;
     }
+    //Aun que no sean necesarios, es recomendable siempre hacer getter and setter de los atributos.
+    
     
     //metodos:
     @Override
