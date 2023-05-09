@@ -8,31 +8,22 @@ package var;
  *
  * @author 34633
  */
-public class BarcoCrucero implements Barco{
-    
-    public static int cont = 1;
+public class BarcoPesquero implements Barco {
     int metros_eslora ;
-    int camas_ocupadas;
+    int potencia;
+    int num_pescadores;
     
-
     //constructor:
 
-    public BarcoCrucero( int metros_eslora, int cont) {
+    public BarcoPesquero(int metros_eslora, int potencia, int num_pescadores) {
         this.metros_eslora = metros_eslora;
-        this.camas_ocupadas = cont;
-        
-        System.out.println("Barco crucero creado: "+ metros_eslora + cont );
+        this.potencia = potencia;
+        this.num_pescadores = num_pescadores;
+        System.out.println("Barco Pesquero creado: "+metros_eslora+" "+potencia+" "+num_pescadores);
+
+    }
     
-    }
-    //getters y setters
-
-    public static int getCont() {
-        return cont;
-    }
-
-    public static void setCont(int cont) {
-        BarcoCrucero.cont = cont;
-    }
+    //getters y setters:
 
     public int getMetros_eslora() {
         return metros_eslora;
@@ -42,17 +33,23 @@ public class BarcoCrucero implements Barco{
         this.metros_eslora = metros_eslora;
     }
 
-    public int getCamas_ocupadas() {
-        return camas_ocupadas;
+    public int getPotencia() {
+        return potencia;
     }
 
-    public void setCamas_ocupadas(int camas_ocupadas) {
-        this.camas_ocupadas = camas_ocupadas;
+    public void setPotencia(int potencia) {
+        this.potencia = potencia;
+    }
+
+    public int getNum_pescadores() {
+        return num_pescadores;
+    }
+
+    public void setNum_pescadores(int num_pescadores) {
+        this.num_pescadores = num_pescadores;
     }
     
-    
-    //metodos
-    
+    //metodos:
     @Override
  
 
@@ -67,5 +64,7 @@ public class BarcoCrucero implements Barco{
         System.out.println("Socorro"+ mensaje);
     
     }
+    
+    
     
 }

@@ -8,7 +8,7 @@ package var;
  *
  * @author 34633
  */
-    class BarcoPortaaviones implements Barco {
+    public class BarcoPortaaviones implements Barco {
     int num_aviones;
     int num_marinos;
     
