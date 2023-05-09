@@ -19,8 +19,8 @@ public class Var {
         BarcoPortaaviones portaaviones = new BarcoPortaaviones(50,50);
         
         crucero.alarma();
-        pesquero.Socorro(ayuda);
-    
+        pesquero.Socorro(" ayuda");
+        portaaviones.alarma();
     
     
     
